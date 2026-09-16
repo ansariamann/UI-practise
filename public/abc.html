@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bootstrap</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <style>
+      header {
+        background-color: blueviolet;
+
+        color: white;
+
+        font-family: Arial;
+
+        padding: 10px;
+
+        font-size: 20px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+      }
+
+      nav span {
+        padding-right: 15px;
+      }
+
+      .search-bar {
+        width: 250px;
+
+        background-color: rgb(173, 90, 251);
+
+        padding: 5px;
+
+        font-size: 18px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        border-radius: 5px;
+      }
+
+      .btn-cmd {
+        background-color: rgb(85, 18, 147);
+
+        padding: 5px;
+
+        border-radius: 5px;
+      }
+
+      .bi-command {
+        font-size: 12px;
+      }
+
+      .shortcut-panel {
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        width: 300px;
+      }
+
+      aside span {
+        padding-right: 15px;
+      }
+
+      .shortcuts span {
+        padding-right: 5px;
+      }
+
+      .bi-caret-down-fill {
+        font-size: 12px;
+      }
+
+      footer {
+        margin-top: 200px;
+
+        background-color: whitesmoke;
+
+        display: grid;
+
+        grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+
+        height: 300px;
+
+        padding: 20px;
+
+        font-family: Arial;
+      }
+
+      .footer-logo {
+        font-size: 30px;
+      }
+
+      .footer-text {
+        font-size: 16px;
+
+        width: 250px;
+
+        text-align: justify;
+
+        margin-top: 10px;
+
+        margin-bottom: 10px;
+      }
+
+      .license,
+      .version {
+        font-size: 14px;
+
+        margin-top: 10px;
+
+        margin-bottom: 10px;
+      }
+
+      .col span {
+        display: block;
+
+        margin-top: 10px;
+
+        margin-bottom: 10px;
+
+        font-size: 18px;
+      }
+
+      .footer-title {
+        font-weight: bold;
+
+        color: gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <nav>
+          <span class="bi bi-bootstrap-fill"></span>
+
+          <span>Docs</span>
+
+          <span>Examples</span>
+
+          <span>Icons</span>
+
+          <span>Blog</span>
+        </nav>
+      </div>
+
+      <div>
+        <div class="search-bar">
+          <div>
+            <span class="bi bi-search"> Search</span>
+          </div>
+
+          <div>
+            <div class="btn-cmd">
+              <span class="bi bi-command"></span>
+
+              <span>K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shortcut-panel">
+        <aside>
+          <span class="bi bi-github"></span>
+
+          <span class="bi bi-twitter-x"></span>
+
+          <span class="bi bi-opencollective"></span>
+        </aside>
+
+        <span>|</span>
+
+        <div class="shortcuts">
+          <span>v5.3</span>
+
+          <span class="bi bi-caret-down-fill"></span>
+
+          <span>|</span>
+
+          <span class="bi bi-sun-fill"></span>
+
+          <span class="bi bi-caret-down-fill"></span>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+      <div>
+        <div class="footer-logo">
+          <span class="bi bi-bootstrap-fill"> Bootstrap</span>
+        </div>
+
+        <div class="footer-text">
+          Designed and built with all the love in the world by the Bootstrap
+          team with the help of our contributors.
+        </div>
+
+        <div class="license">Code licensed MIT, docs CC BY 3.0.</div>
+
+        <div class="version">Currently v5.3.8.</div>
+      </div>
+
+      <div class="col">
+        <span class="footer-title"> Links</span>
+
+        <span>Home</span>
+
+        <span>Docs</span>
+
+        <span>Examples</span>
+
+        <span>Icons</span>
+
+        <span>Blog</span>
+
+        <span>Swag Store</span>
+      </div>
+
+      <div class="col">
+        <span class="footer-title"> Guides</span>
+
+        <span>Home</span>
+
+        <span>Docs</span>
+
+        <span>Examples</span>
+
+        <span>Icons</span>
+
+        <span>Blog</span>
+
+        <span>Swag Store</span>
+      </div>
+
+      <div class="col">
+        <span class="footer-title"> Projects</span>
+
+        <span>Home</span>
+
+        <span>Docs</span>
+
+        <span>Examples</span>
+
+        <span>Icons</span>
+
+        <span>Blog</span>
+
+        <span>Swag Store</span>
+      </div>
+
+      <div class="col">
+        <span class="footer-title"> Community</span>
+
+        <span>Home</span>
+
+        <span>Docs</span>
+
+        <span>Examples</span>
+
+        <span>Icons</span>
+
+        <span>Blog</span>
+
+        <span>Swag Store</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <style>
+      header {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        font-size: 20px;
+        padding: 10px;
+        background-color: blue;
+        font-family: Arial;
+        color: white;
+      }
+      nav span {
+        padding-right: 15px;
+      }
+      .search {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(52, 63, 211);
+      }
+      .rt {
+        display: flex;
+        flex-direction: row;
+        padding-right: 10px;
+        align-items: center;
+
+        justify-content: space-between;
+      }
+      aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .version {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      body {
+        margin: 0;
+      }
+      aside {
+        display: flex;
+        flex-direction: row;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <nav>
+          <span class="bi bi-bootstrap"> </span>
+          <span>Docs</span>
+          <span>Examples</span>
+          <span>Icons</span>
+          <span>Blogs</span>
+        </nav>
+      </div>
+      <div class="search">
+        <div class="search-text">search</div>
+        <div class="bi bi-search">K</div>
+      </div>
+      <div class="rt">
+        <div>
+          <aside>
+            <div class="bi bi-github"></div>
+            <div class="bi bi-twitter"></div>
+            <div class="bi bi-opencollective"></div>
+          </aside>
+        </div>
+        <span>|</span>
+        <div class="version">
+          <div>v5.3</div>
+          <div>|</div>
+          <div class="bi bi-moon-stars"></div>
+        </div>
+      </div>
+    </header>
+    <footer></footer>
+  </body>
+</html>

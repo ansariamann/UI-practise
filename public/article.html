@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <style>
+      nav {
+        background-color: black;
+
+        color: white;
+
+        width: 250px;
+
+        height: 600px;
+
+        font-family: Arial;
+
+        padding: 10px;
+
+        font-size: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+      }
+
+      .nav-item,
+      .btn-signout {
+        margin-top: 10px;
+
+        margin-bottom: 10px;
+
+        padding: 10px;
+
+        background-color: rgb(233, 232, 232);
+
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <div class="brand-title">
+          <span class="bi bi-cloud"> Weather App </span>
+        </div>
+
+        <div class="nav-item">
+          <span class="bi bi-columns-gap"> Forecast</span>
+        </div>
+
+        <div class="nav-item">
+          <span class="bi bi-radar"> Radar </span>
+        </div>
+
+        <div class="nav-item">
+          <span class="bi bi-wind"> Air Quality</span>
+        </div>
+
+        <div class="nav-item">
+          <span class="bi bi-exclamation-triangle"> Severe Alerts</span>
+        </div>
+
+        <div class="nav-item">
+          <span class="bi bi-clock-history"> Historic Trends </span>
+        </div>
+
+        <div class="nav-item">
+          <span class="bi bi-gear"> Settings</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="btn-signout">
+          <span class="bi bi-door-open"> Signout </span>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+
+Summary:
+
+<header>
+  <nav>
+    <aside>
+      <footer>
+        <address>
+          6.
+          <section>
+            - Sections are configured between header and footer. - Sections are
+            used to display multiple categories of content in a page. - Every
+            category can be in a section. - You can define multiple sections in
+            page. 7.
+            <main>
+              - In software programming “main” is considered as “entry point”. -
+              It defines the startup location in web page. - New users can start
+              using from “main”. - Page can have multiple entry points. 8.
+              <article>
+                - It is a container used to display latest trends and offers. -
+                It can publish the highlights of business. - It is used to
+                design “Hero Banners”. Ex: Netflix.html
+
+                <!DOCTYPE html>
+
+                <html lang="en">
+                  <head>
+                    <meta charset="UTF-8" />
+
+                    <meta
+                      name="viewport"
+                      content="width=device-width, initial-scale=1.0"
+                    />
+
+                    <title>Netflix</title>
+
+                    <link
+                      rel="stylesheet"
+                      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+                    />
+
+                    <style>
+                      body {
+                        background-image: url("./images/netflix-banner.jpg");
+
+                        background-size: cover;
+                      }
+
+                      .bg-shade {
+                        background-color: rgba(0, 0, 0, 0.7);
+
+                        height: 100vh;
+
+                        margin-left: -10px;
+
+                        margin-top: -10px;
+
+                        width: 101.3%;
+                      }
+
+                      header {
+                        color: white;
+
+                        padding-left: 100px;
+
+                        padding-right: 100px;
+
+                        padding-top: 50px;
+
+                        font-family: Arial;
+
+                        display: flex;
+
+                        flex-direction: row;
+
+                        justify-content: space-between;
+                      }
+
+                      .brand-title {
+                        font-size: 50px;
+
+                        font-weight: bold;
+
+                        color: red;
+                      }
+
+                      .language {
+                        border: 1px solid rgb(212, 210, 210);
+
+                        padding: 10px;
+
+                        width: 150px;
+
+                        display: flex;
+
+                        flex-direction: row;
+
+                        justify-content: space-between;
+
+                        background-color: rgba(0, 0, 0, 0.7);
+
+                        border-radius: 5px;
+                      }
+
+                      .btn-signin {
+                        background-color: red;
+
+                        color: white;
+
+                        padding: 10px;
+
+                        width: 90px;
+
+                        border-radius: 5px;
+
+                        text-align: center;
+
+                        margin-left: 20px;
+                      }
+
+                      .shortcuts {
+                        display: flex;
+
+                        flex-direction: row;
+
+                        align-items: center;
+                      }
+
+                      section {
+                        text-align: center;
+
+                        color: white;
+
+                        padding-top: 100px;
+
+                        font-family: Arial;
+                      }
+
+                      .article-title {
+                        font-size: 50px;
+
+                        font-weight: bold;
+
+                        margin-bottom: 10px;
+                      }
+
+                      .article-subtitle {
+                        font-size: 22px;
+
+                        margin-bottom: 20px;
+                      }
+
+                      .email {
+                        border: 1px solid rgb(210, 208, 208);
+
+                        padding: 15px;
+
+                        width: 250px;
+
+                        text-align: left;
+
+                        background-color: rgba(0, 0, 0, 0.7);
+                      }
+
+                      .btn-start {
+                        background-color: red;
+
+                        color: white;
+
+                        padding: 15px;
+
+                        width: 150px;
+
+                        margin-left: 20px;
+                      }
+
+                      .form {
+                        display: flex;
+
+                        flex-direction: row;
+
+                        justify-content: center;
+
+                        margin-top: 20px;
+                      }
+
+                      .main-title {
+                        font-size: 14px;
+                      }
+                    </style>
+                  </head>
+
+                  <body>
+                    <div class="bg-shade">
+                      <header>
+                        <div>
+                          <span class="brand-title">NETFLIX</span>
+                        </div>
+
+                        <div class="shortcuts">
+                          <div class="language">
+                            <span class="bi bi-translate">
+                              <span>English</span>
+                            </span>
+
+                            <span class="bi bi-caret-down-fill"></span>
+                          </div>
+
+                          <div class="btn-signin">Signin</div>
+                        </div>
+                      </header>
+
+                      <section>
+                        <article>
+                          <div class="article-title">
+                            Unlimited movies, <br />shows, and more
+                          </div>
+
+                          <div class="article-subtitle">
+                            Starts at ₹149. Cancel at any time.
+                          </div>
+
+                          <main>
+                            <div class="main-title">
+                              Ready to watch? Enter your email to create or
+                              restart your membership.
+                            </div>
+
+                            <div class="form">
+                              <div class="email">Email Address</div>
+
+                              <div class="btn-start">
+                                Get Started
+                                <span class="bi bi-chevron-right"></span>
+                              </div>
+                            </div>
+                          </main>
+                        </article>
+                      </section>
+                    </div>
+                  </body>
+                </html>
+              </article>
+            </main>
+          </section>
+        </address>
+      </footer>
+    </aside>
+  </nav>
+</header>

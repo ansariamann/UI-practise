@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Leet Code</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        background-color: rgb(234, 241, 241);
+
+        font-family: Arial;
+      }
+
+      header {
+        font-size: 18px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        padding: 10px;
+      }
+
+      header span {
+        padding-right: 10px;
+
+        margin-right: 5px;
+      }
+
+      .bi-bug-fill,
+      .bi-play-fill,
+      .bi-cloud-arrow-up-fill,
+      .bi-file-earmark,
+      .bi-stars,
+      .bi-columns-gap,
+      .bi-gear {
+        padding: 7px;
+
+        background-color: rgb(234, 231, 231);
+
+        border-radius: 5px;
+      }
+
+      .timer {
+        padding: 7px;
+
+        background-color: rgb(234, 231, 231);
+
+        border-radius: 5px;
+
+        margin-right: 10px;
+      }
+
+      .btn-premium {
+        background-color: rgb(255, 248, 240);
+
+        color: rgb(252, 171, 73);
+
+        padding: 7px;
+
+        border-radius: 5px;
+      }
+
+      main {
+        height: 550px;
+
+        display: grid;
+
+        grid-template-columns: 6fr 6fr;
+      }
+
+      .card {
+        background-color: white;
+
+        padding: 10px;
+
+        margin: 10px;
+
+        border-radius: 10px;
+
+        overflow: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <span class="bi bi-javascript"></span>
+
+        <span>30 Days of Javascript</span>
+
+        <span class="bi bi-chevron-left"></span>
+
+        <span class="bi bi-chevron-right"></span>
+
+        <span class="bi bi-shuffle"></span>
+      </div>
+
+      <div>
+        <span class="bi bi-bug-fill"></span>
+
+        <span class="bi bi-play-fill"></span>
+
+        <span class="bi bi-cloud-arrow-up-fill"> Submit </span>
+
+        <span class="bi bi-file-earmark"></span>
+
+        <span class="bi bi-stars"></span>
+
+        <span class="bi bi-columns-gap"></span>
+
+        <span class="bi bi-gear"></span>
+
+        <span class="timer">
+          <span class="bi bi-chevron-left"></span>
+
+          <span class="bi bi-pause-fill"></span>
+
+          <span>667:56:23</span>
+
+          <span class="bi bi-arrow-repeat"></span>
+        </span>
+
+        <span>Register or Login</span>
+
+        <span class="btn-premium">Premium</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <pre>
+
+            Write a function createHelloWorld. It should return a new function that always returns "Hello World".
+
+ 
+
+
+
+Example 1:
+
+
+
+Input: args = []
+
+Output: "Hello World"
+
+Explanation:
+
+const f = createHelloWorld();
+
+f(); // "Hello World"
+
+
+
+The function returned by createHelloWorld should always return "Hello World".
+
+Example 2:
+
+
+
+Input: args = [{},null,42]
+
+Output: "Hello World"
+
+Explanation:
+
+const f = createHelloWorld();
+
+f({}, null, 42); // "Hello World"
+
+
+
+Any arguments could be passed to the function but it should still always return "Hello World".
+
+ 
+
+
+
+Constraints:
+
+
+
+0 <= args.length <= 10
+
+
+
+Write a function createHelloWorld. It should return a new function that always returns "Hello World".
+
+ 
+
+
+
+Example 1:
+
+
+
+Input: args = []
+
+Output: "Hello World"
+
+Explanation:
+
+const f = createHelloWorld();
+
+f(); // "Hello World"
+
+
+
+The function returned by createHelloWorld should always return "Hello World".
+
+Example 2:
+
+
+
+Input: args = [{},null,42]
+
+Output: "Hello World"
+
+Explanation:
+
+const f = createHelloWorld();
+
+f({}, null, 42); // "Hello World"
+
+
+
+Any arguments could be passed to the function but it should still always return "Hello World".
+
+ 
+
+
+
+Constraints:
+
+
+
+0 <= args.length <= 10
+
+          </pre
+        >
+      </section>
+
+      <section class="card"></section>
+    </main>
+  </body>
+</html>

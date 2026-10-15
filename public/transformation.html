@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <title>Document</title>
+
+    <style>
+      .card {
+        width: 350px;
+
+        height: 450px;
+
+        border: 1px solid rgb(240, 164, 77);
+        margin: 20px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: end;
+      }
+
+      .card-img {
+        width: 100%;
+
+        height: 100%;
+
+        transition: 500ms;
+      }
+
+      .card:hover .card-img {
+        transform: scale(1.1);
+
+        transition: 500ms;
+      }
+      .card2 {
+        background-image: url("./C.jpg");
+        background-size: contain;
+      }
+      .card2:hover {
+        background-size: 105%, 110%;
+      }
+      .shortcut {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <div class="card">
+      <img src="./A.jpg" class="card-img" />
+    </div>
+    <div class="card">
+      <img src="./C.jpg" class="card-img" alt="" />
+    </div>
+    <div class="card card2">
+      <div class="shortcut">
+        <span class="bi bi-star"></span>
+        <span class="bi bi-window-dash"></span>
+        <span class="bi bi-circle"></span>
+      </div>
+    </div>
+  </body>
+</html>

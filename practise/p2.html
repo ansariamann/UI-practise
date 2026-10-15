@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        margin:0;
+        
+      }
+      .main {
+        display: grid;
+        grid-template-columns: 3fr 6fr 3fr;
+        margin-top: 30px;
+      }
+      .main {
+        height: 500px;
+        margin: 20px;
+      }
+      .bg {
+        background-color: rgb(49, 54, 57);
+      }
+      .navv {
+        height: 60px;
+        background-color: rgb(49, 54, 57);
+      }
+      nav {
+    height: 100%;
+}
+
+      
+        .icon {
+    color: white;
+    font-size: 40px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: baseline;
+  }
+      .search{
+        color:white;
+        font-size: 20px;
+        width :300px;
+        padding: 10px;
+        border: 1px solid rgb(184, 182, 182);
+        border-radius: 20px;
+      }
+     .nav1 {
+      margin-left: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+      .posts {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+      }
+      .post1{
+        height: 200px;
+        margin: 20px;
+
+      }
+      
+      </style>
+  </head>
+  <body>
+    <div class="navv">
+      <nav>
+        <div class ="nav1">
+          <span class="bi bi-linkedin icon" ></span>
+          <input type="text" class="search bi-search" placeholder="Search">
+        </div>
+      <div></div>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="bg"></div>
+      <div class="posts  ">
+        <div class="bg post1"></div>
+        <div class="bg post2"></div>
+      </div>
+      <div class="bg"></div>
+    </div>
+  </body>
+</html>

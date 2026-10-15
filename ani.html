@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 50px;
+      letter-spacing: 5px;
+    }
+    @keyframes k{
+      0%{
+        transform: scale(1);
+        transition: 1s;
+      }
+      100%{
+        transform: scale(1.4);
+        transition: 1s;
+
+      }
+    }
+    .bi-heart-pulse{
+      animation-name: k;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+
+
+
+    }
+    
+  </style>
+  <body>
+    <span>A</span>
+    <span>B</span>
+    <span>A</span>
+    <span>B</span> 
+    <span class="bi bi-heart-pulse"></span>
+
+    <span>A</span>
+     <span>B</span>
+      <span>A</span>
+    <span>B</span>
+  </body>
+</html>

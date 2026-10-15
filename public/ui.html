@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes spin{
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        
+      }
+      img {
+        transform:  scale3d(1, 1, 1);
+        transition: 1s;
+      }
+      img:hover {
+        transform:   scale3d(1.5, 1.5, 1.5);
+        transition: 3s;}
+        .spin{
+          display: inline-block;
+          position: relative;
+          border: 5px solid black;
+          width: 50px;
+          border-radius: 100%;
+          height: 50px;
+          animation: spin 2s linear infinite;
+        }
+        .sp2{
+          display: block;
+          position: absolute;
+          top:-5px;
+          left: 50%;
+          border
+          width: 5px;
+          background-color: red;
+          height:5px;
+          border-radius: 50%;
+
+        }
+        .vararc{
+
+          background: conic-gradient(red 0deg 240deg, transparent 240deg 360deg);
+         mask: radial-gradient(transparent 5%, white 50%);
+
+        }
+        .loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  /* Red arc: first 120 degrees; remaining part transparent */
+  background: conic-gradient(red 0deg 120deg, transparent 120deg 360deg);
+
+  /* Creates the hollow center, making it look like a border */
+  mask: radial-gradient(transparent 65%, black 66%);
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <img src="./D.jpg" alt="" width="300px" />
+    <span class= "spin">
+      <span class="sp2"></span>
+    </span>
+    <span class="spin vararc"></span>
+    <div class="loader"></div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .navi {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid black;
+        height: 100vh;
+        font-size: 20px;
+      }
+      a {
+        margin: 20px;
+      }
+      a:visited {
+        color: grey;
+        font-size: 25px;
+      }
+      a:active {
+        color: green;
+        font-size: 22px;
+      }
+      a:hover {
+        color: blue;
+      }
+      .playground {
+        /* background-color: rgb(221, 168, 98); */
+        font-size: 20px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navi">
+      <a href="../public/fieldset.html">fieldset</a>
+      <a href="../public/A.jpg">img</a>
+      <a href="mailto:iamamanansari786a@gmail.com">mail</a>
+      <a href="tel:+918139393939">phone</a>
+      <a href="https://google.com">link</a>
+
+      <a href="../public/A.jpg" target="_blank">img diff window</a>
+
+      <a
+        href="javascript:window.open('../public/images.jpg','titlenew','width=400,height=400')"
+      >
+        popup
+      </a>
+
+      <a target="yt" href="https://www.youtube.com/embed/gX0L0aFA2xg"> arrays </a>
+    </nav>
+
+    <main class="playground">
+      <iframe
+        name="yt"
+        width="1030"
+        height="579"
+        src="https://www.youtube.com/embed/gX0L0aFA2xg"
+        title="Claude Opus 5.5 is ridiculous"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        hidden
+      ></iframe>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 40px 0;
+        box-sizing: border-box;
+        color: #1d252c;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(
+            118deg,
+            rgba(132, 177, 198, 0.32),
+            transparent 44%
+          ),
+          linear-gradient(298deg, rgba(216, 193, 167, 0.28), transparent 46%),
+          #edf1f3;
+      }
+      .para {
+        box-sizing: border-box;
+        width: min(500px, calc(100% - 32px));
+        height: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        overflow: auto;
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.38);
+        box-shadow: 0 24px 64px rgba(43, 57, 67, 0.14),
+          inset 0 1px 0 rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(28px) saturate(180%);
+        -webkit-backdrop-filter: blur(28px) saturate(180%);
+      }
+      .para p {
+        color: rgba(29, 37, 44, 0.82);
+        font-size: 16px;
+        line-height: 1.65;
+      }
+      .para h1 {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        margin: -20px -20px 18px;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.68);
+        border-radius: 24px 24px 0 0;
+        color: #182127;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1.2;
+        background: rgba(246, 249, 251, 0.76);
+        box-shadow: 0 8px 20px rgba(42, 56, 66, 0.06);
+        backdrop-filter: blur(24px) saturate(180%);
+        -webkit-backdrop-filter: blur(24px) saturate(180%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="para">
+      <h1>Consider static factory methods instead of constructors</h1>
+      <p>
+        The traditional way for a class to allow a client to obtain an instance
+        is to provide a public constructor. There is another technique that
+        should be a part of every programmer’s toolkit. A class can provide a
+        public static factory method, which is simply a static method that
+        returns an instance of the class. Here’s a simple example from Boolean
+        (the boxed primitive class for boolean). This method translates a
+        boolean primitive value into a Boolean object reference: public static
+        Boolean valueOf(boolean b) { return b ? Boolean.TRUE : Boolean.FALSE; }
+        Note that a static factory method is not the same as the Factory Method
+        pattern from Design Patterns [Gamma95]. The static factory method
+        described in this item has no direct equivalent in Design Patterns. A
+        class can provide its clients with static factory methods instead of, or
+        in addition to, public constructors. Providing a static factory method
+        instead of a public constructor has both advantages and disadvantages.
+      </p>
+      <p>
+        will end up calling the wrong one by mistake. People reading code that
+        uses these constructors will not know what the code does without
+        referring to the class documentation. Because they have names, static
+        factory methods don’t share the restriction discussed in the previous
+        paragraph. In cases where a class seems to require multiple constructors
+        with the same signature, replace the constructors with static factory
+        methods and carefully chosen names to highlight their differences. A
+        second advantage of static factory methods is that, unlike constructors,
+        they are not required to create a new object each time they’re invoked.
+        This allows immutable classes (Item 17) to use preconstructed instances,
+        or to cache instances as they’re constructed, and dispense them
+        repeatedly to avoid creating unnecessary duplicate objects. The
+        Boolean.valueOf(boolean) method illustrates this technique: it never
+        creates an object. This technique is similar to the Flyweight pattern
+        [Gamma95]. It can greatly improve performance if equivalent objects are
+        requested often, especially if they are expensive to create. The ability
+        of static factory methods to return the same object from repeated
+        invocations allows classes to maintain strict control over what
+        instances exist at any time. Classes that do this are said to be
+        instance-controlled. There are several reasons to write
+        instance-controlled classes. Instance control allows a class to
+        guarantee that it is a singleton (Item 3) or noninstantiable (Item 4).
+        Also, it allows an immutable value class (Item 17) to make the guarantee
+        that no two equal instances exist: a.equals(b) if and only if a == b.
+        This is the basis of the F
+      </p>
+    </div>
+  </body>
+</html>

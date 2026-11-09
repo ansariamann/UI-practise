@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <script>
+      // Copy the loan amount slider's current value into the loan amount text box.
+      function AmountChange() {
+        document.getElementById("txtAmount").value =
+          document.getElementById("rangeAmount").value;
+      }
+
+      // Copy the interest rate slider's current value into the interest rate text box.
+      function RateChange() {
+        document.getElementById("txtRate").value =
+          document.getElementById("rangeRate").value;
+      }
+
+      // Copy the loan tenure slider's current value into the years text box.
+      function YearChange() {
+        document.getElementById("txtYears").value =
+          document.getElementById("rangeYears").value;
+      }
+
+      // Run this function when the user clicks the Calculate button.
+      function CalculateClick() {
+        // Read the loan amount from the page and convert it to a whole number.
+        var P = parseInt(document.getElementById("txtAmount").value);
+
+        // Read the yearly interest rate, then convert it to a monthly decimal rate.
+        var r = parseFloat(document.getElementById("txtRate").value) / 12 / 100;
+
+        // Convert the loan duration from years to the total number of monthly payments.
+        var n = parseInt(document.getElementById("txtYears").value) * 12;
+
+        // Use the current expression to calculate a value for the monthly EMI.
+        var EMI = (P * r * Math.pow(1 + r, n)) / Math.pow(1 + r, n) - 1;
+
+        // Find the result label on the page and display the EMI as Indian rupees.
+        document.getElementById("lblEmi").innerHTML = EMI.toLocaleString("en", {
+          // Format the number as a currency amount.
+          style: "currency",
+          // Use the Indian rupee currency symbol.
+          currency: "INR",
+          // Do not show decimal places in the displayed amount.
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
+        });
+      }
+    </script>
+  </head>
+
+  <body class="bg-secondary p-2 m-2">
+    <!-- Page heading for the loan calculator. -->
+    <h2 class="text-center text-white">Personal Loan EMI Calculator</h2>
+
+    <!-- Place the calculator inputs and EMI result side by side in a row. -->
+    <div class="mt-3 row">
+      <!-- This card contains the loan details and the Calculate button. -->
+      <div class="card m-2 p-4 col">
+        <div>
+          <div class="d-flex justify-content-between">
+            <!-- The text box shows the selected loan amount. -->
+            <label class="form-label fw-bold">Loan Amount</label>
+
+            <input type="text" id="txtAmount" />
+          </div>
+
+          <div class="mt-3">
+            <!-- Moving this slider calls AmountChange to update the text box. -->
+            <input
+              type="range"
+              onchange="AmountChange()"
+              id="rangeAmount"
+              class="form-range"
+              min="100000"
+              max="1000000"
+              value="100000"
+              step="10000"
+            />
+
+            <!-- Show the minimum and maximum loan amounts below the slider. -->
+            <div class="mt-2">
+              <span>&#8377; 1,00,000</span>
+
+              <span class="float-end">&#8377; 10,00,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="d-flex justify-content-between">
+            <!-- The text box shows the selected loan duration in years. -->
+            <label class="form-label fw-bold">Loan Tenure</label>
+
+            <input type="text" id="txtYears" size="2" />
+          </div>
+
+          <div class="mt-3">
+            <!-- Moving this slider calls YearChange to update the years text box. -->
+            <input
+              type="range"
+              onchange="YearChange()"
+              id="rangeYears"
+              class="form-range"
+              min="1"
+              max="7"
+              value="1"
+              step="1"
+            />
+
+            <!-- Show the minimum and maximum loan durations below the slider. -->
+            <div class="mt-2">
+              <span>1 Year</span>
+
+              <span class="float-end">7 Years</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="d-flex justify-content-between">
+            <!-- The text box shows the selected yearly interest rate. -->
+            <label class="form-label fw-bold">Interest Rate</label>
+
+            <input type="text" id="txtRate" size="4" />
+          </div>
+
+          <div class="mt-3">
+            <!-- Moving this slider calls RateChange to update the rate text box. -->
+            <input
+              type="range"
+              onchange="RateChange()"
+              id="rangeRate"
+              class="form-range"
+              min="9.45"
+              max="18.45"
+              value="9.45"
+              step="0.01"
+            />
+
+            <!-- Show the minimum and maximum yearly rates below the slider. -->
+            <div class="mt-2">
+              <span>9.45% PA</span>
+
+              <span class="float-end">18.45% PA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clicking this button runs CalculateClick. -->
+        <button onclick="CalculateClick()" class="btn btn-primary mt-2">
+          Calculate
+        </button>
+      </div>
+
+      <!-- This card displays the monthly EMI after calculation. -->
+      <div class="card m-2 p-4 col">
+        <div class="card-header text-center">
+          <h2>Your Monthly EMI</h2>
+        </div>
+
+        <div class="card-body">
+          <!-- JavaScript puts the formatted EMI amount into this span. -->
+          <span class="fs-2 fw-bold" id="lblEmi"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // document.write("0123456789".substr(2, 4));
+      // document.write("0123456677".substring(1, 4));
+      // var name = prompt("your name");
+      // var age = prompt("your age");
+      // document.write("your name is " + name + "and age is " + age);
+      // document.write(document.documentElement);
+    </script>
+  </head>
+  <body></body>
+</html> -->

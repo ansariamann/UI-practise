@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </head>
+  <body class="container-fluid">
+    <h1>Alert</h1>
+    <aside class="alert alert-danger alert-dismissible w-50">
+      <button data-bs-dismiss="alert" class="btn-close"></button>
+      <img src="./B.jpg" alt="" width="100%" />
+    </aside>
+    <div class="alert alert-success  w-50">
+      <h2 class="alert-title">Registered Successfully</h2>
+
+      <button data-bs-dismiss="alert" class="btn btn-close"></button>
+
+      <p>Verification email sent to your official account.</p>
+
+      <a class="alert-link" href="./A.jpg">
+        <span class="bi bi-question-circle" ></span> Help
+      </a>
+
+      <br /><br />
+
+      <button data-bs-dismiss="alert" class="btn btn-success">OK</button>
+
+    </div>
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#imageModal"
+    >
+      Open modal
+    </button>
+
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="imageModalLabel">Modal header</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./A.jpg" class="img-fluid" alt="A scenic view" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

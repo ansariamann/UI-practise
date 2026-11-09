@@ -1,0 +1,141 @@
+<script>
+  "use strict";
+  var name ;
+  let a =100;
+  const c ="akjs";
+
+  name = "anv";
+  {
+    document.write(a+c+name);
+     a=300;
+  document.write("<br>"+a+c+name);
+    var name ='named';
+
+    name = "sdd";
+    document.write(a+c+name);
+    document.write(name);
+  }
+  function f(){
+    var x;
+     x=10;
+     if(x===10){
+      var y=20;
+      y=30;
+      var y=50;
+
+     }
+     z=100;
+     document.write("<br>x="+x+ "<br>y="+y+z);
+     var z;
+  }
+  f();
+  function f2(){
+    let x1=100;
+    const x2=334;
+    var g="jsd";
+    document.write("<br>"+x1+" "+ x2+" ");
+  }
+
+  f2();
+document.write("dfgdfjsl");
+</script>
+
+// <!-- <!DOCTYPE html>
+// <html lang="en">
+//   <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//     <title>var, let, and const - Simple Guide</title>
+//     <style>
+//       body {
+//         max-width: 700px;
+//         margin: 30px auto;
+//         padding: 0 16px;
+//         font-family: Arial, sans-serif;
+//         line-height: 1.5;
+//       }
+
+//       section {
+//         margin: 20px 0;
+//         padding: 12px 16px;
+//         border: 1px solid #ccc;
+//         border-radius: 6px;
+//       }
+
+//       pre {
+//         padding: 12px;
+//         overflow-x: auto;
+//         background: #f3f3f3;
+//       }
+
+//       .summary {
+//         font-weight: bold;
+//       }
+//     </style>
+//   </head>
+//   <body>
+//     <h1>var, let, and const</h1>
+//     <p>A variable is a named place to store a value.</p>
+
+//     <section>
+//       <h2>1. Change a value</h2>
+//       <p><code>let</code> and <code>var</code> let you change the value later.</p>
+//       <pre><code>let name = "Sam";
+// name = "Alex";</code></pre>
+//       <p>Now <code>name</code> is <strong>Alex</strong>.</p>
+
+//       <p><code>const</code> does not let you replace its value.</p>
+//       <pre><code>const age = 20;
+// age = 21; // Error: cannot change a const value</code></pre>
+//     </section>
+
+//     <section>
+//       <h2>2. Declare a variable again</h2>
+//       <p>
+//         <code>var</code> can be declared again. <code>let</code> and
+//         <code>const</code> cannot be declared again with the same name in the
+//         same place.
+//       </p>
+//       <pre><code>var color = "red";
+// var color = "blue"; // Allowed
+
+// let food = "rice";
+// let food = "bread"; // Error</code></pre>
+//     </section>
+
+//     <section>
+//       <h2>3. Where a variable works (scope)</h2>
+//       <p>
+//         A pair of braces <code>{ }</code> makes a block. <code>let</code> and
+//         <code>const</code> only work inside the block where they are created.
+//         <code>var</code> can also be used outside it.
+//       </p>
+//       <pre><code>{
+//   var a = 1;
+//   let b = 2;
+//   const c = 3;
+// }
+
+// console.log(a); // 1
+// console.log(b); // Error: b is outside its block</code></pre>
+//       <p><code>c</code> is also only available inside the block.</p>
+//     </section>
+
+//     <section>
+//       <h2>4. A special thing about const</h2>
+//       <p>
+//         <code>const</code> means you cannot replace the array or object. You can
+//         still change items inside it.
+//       </p>
+//       <pre><code>const pets = ["cat"];
+// pets.push("dog"); // Allowed: changes an item
+// pets = ["fish"];  // Error: replaces the array</code></pre>
+//     </section>
+
+//     <section>
+//       <h2>5. Which one should I use?</h2>
+//       <p>Use <code>const</code> by default. Use <code>let</code> if the value needs to change. Avoid <code>var</code> in new code.</p>
+//       <p class="summary">const = stays the same; let = can change; var = older way.</p>
+//     </section>
+//   </body>
+// </html> -->

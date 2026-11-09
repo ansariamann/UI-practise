@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <script>
+      function bodyload() {
+      document.images[0].src="../public/A.jpg";
+      document.forms[1].elements[2].value="login";
+      document.getElementById("id").style
+      }
+    </script>
+  </head>
+
+  <body onload="bodyload()">
+    <div>
+      <img width="100" height="100" border="1" />
+    </div>
+
+    <div>
+      <form>
+        <h2>Login</h2>
+
+        <label>Email</label>
+
+        <div>
+          <input type="email" />
+        </div>
+
+        <input type="button" />
+      </form>
+    </div>
+
+    <div>
+      <form>
+        <h2>Register</h2>
+
+        <div>
+          <label>UserName</label>
+
+          <div>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div>
+          <label id="id">Password</label>
+
+          <div>
+            <input type="password" />
+          </div>
+        </div>
+
+        <div>
+          <label>Mobile</label>
+
+          <div>
+            <input type="text" />
+          </div>
+        </div>
+
+        <input type="button" />
+      </form>
+    </div>
+  </body>
+</html>

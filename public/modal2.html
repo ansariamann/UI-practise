@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </head>
+
+  <body class="container-fluid">
+    <h1>Alert</h1>
+
+    <aside class="alert alert-warning alert-dismissible w-25">
+      <button data-bs-dismiss="alert" class="btn btn-close"></button>
+
+      <h3>Ads</h3>
+
+      <img src="../public/images/devops.jpg" width="100" height="100" />
+    </aside>
+
+    <div class="alert alert-success alert-dismissible w-50">
+      <h2 class="alert-title">Registered Successfully</h2>
+
+      <button data-bs-dismiss="alert" class="btn btn-close"></button>
+
+      <p>Verification email sent to your official account.</p>
+
+      <a class="alert-link">
+        <span class="bi bi-question-circle"></span> Help
+      </a>
+
+      <br /><br />
+
+      <button data-bs-dismiss="alert" class="btn btn-success">OK</button>
+    </div>
+  </body>
+</html>
+
+2. Modal - It is used for a popup dialog box. - It contains content in the
+backdrop. - You can toggle the dialog dynamically. Classes: .modal .modal-dialog
+.modal-content .modal-header .modal-body .modal-footer .modal-dialog-centered
+.modal-dialog-scrollable .modal-fullscreen .fade Attributes: data-bs-target : It
+refers to the ID of component. data-bs-toggle : It refers to the component name
+to open. data-bs-dismiss : It refers to the component name to close. Syntax:
+
+<div class="“modal”">
+  <div class="“modal-dialog”">
+    <div class="“modal-content”">… header, body, footer …</div>
+  </div>
+</div>
+
+Syntax:
+
+<div class="“modal-dialog" modal-dialog-centered modal-fullscreen”>
+  <div class="“modal" fade”>
+    Ex:
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Document</title>
+
+        <link
+          rel="stylesheet"
+          href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+        />
+
+        <link
+          rel="stylesheet"
+          href="../node_modules/bootstrap/dist/css/bootstrap.css"
+        />
+
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      </head>
+
+      <body class="container-fluid p-4 m-3">
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#login"
+          class="btn btn-primary"
+        >
+          Login
+        </button>
+
+        <div class="modal fade" id="login">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>Login</h3>
+              </div>
+
+              <div class="modal-body">
+                <dl>
+                  <dt>User Name</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Password</dt>
+
+                  <dd><input type="password" class="form-control" /></dd>
+                </dl>
+              </div>
+
+              <div class="modal-footer">
+                <button class="btn btn-warning">Login</button>
+
+                <button data-bs-dismiss="modal" class="btn btn-danger mx-2">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#talk"
+          class="btn position-fixed end-0 bottom-50 btn-warning bi bi-messenger"
+        ></button>
+
+        <div class="modal fade" id="talk">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2>Talk to Advisor</h2>
+
+                <button data-bs-dismiss="modal" class="btn btn-close"></button>
+              </div>
+
+              <div class="modal-body">
+                <dl>
+                  <dt>Your Name</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Email</dt>
+
+                  <dd><input type="email" class="form-control" /></dd>
+
+                  <dt>Mobile</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Your Name</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Email</dt>
+
+                  <dd><input type="email" class="form-control" /></dd>
+
+                  <dt>Mobile</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Your Name</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Email</dt>
+
+                  <dd><input type="email" class="form-control" /></dd>
+
+                  <dt>Mobile</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Your Name</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Email</dt>
+
+                  <dd><input type="email" class="form-control" /></dd>
+
+                  <dt>Mobile</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Your Name</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+
+                  <dt>Email</dt>
+
+                  <dd><input type="email" class="form-control" /></dd>
+
+                  <dt>Mobile</dt>
+
+                  <dd><input type="text" class="form-control" /></dd>
+                </dl>
+              </div>
+
+              <div class="modal-footer">
+                <button data-bs-dismiss="modal" class="btn btn-primary">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+  </div>
+</div>

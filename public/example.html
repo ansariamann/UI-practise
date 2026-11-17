@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+      ul {
+        list-style: none;
+      }
+    </style>
+
+    <script>
+      function FilterData() {
+        var searchString = document.getElementById("txtSearch").value;
+
+        var listItems = document.getElementsByTagName("li");
+
+        for (var item of listItems) {
+          if (
+            item.textContent.toLowerCase().includes(searchString.toLowerCase())
+          ) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <input
+      type="text"
+      onkeyup="FilterData()"
+      id="txtSearch"
+      placeholder="Search Topic"
+    />
+
+    <ul>
+      <li>HTML Examples</li>
+
+      <li>Javascript Examples</li>
+
+      <li>HTML Projects</li>
+
+      <li>CSS Projects</li>
+
+      <li>CSS Examples</li>
+    </ul>
+  </body>
+</html>

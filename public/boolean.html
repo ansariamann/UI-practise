@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dialog</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <style>
+      dialog {
+        width: 400px;
+
+        font-family: Arial;
+
+        border: 1px solid rgb(210, 209, 209);
+
+        border-top-left-radius: 20px;
+
+        border-top-right-radius: 20px;
+
+        padding: 0px;
+
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      .dialog-header {
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+
+        background-color: rgb(48, 47, 47);
+
+        padding: 20px;
+
+        border-top-left-radius: 20px;
+
+        border-top-right-radius: 20px;
+
+        font-weight: bold;
+
+        color: white;
+      }
+
+      .dialog-body {
+        padding: 20px;
+      }
+
+      .control {
+        padding: 20px;
+
+        background-color: rgb(226, 225, 225);
+
+        margin-bottom: 20px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        border-radius: 10px;
+      }
+
+      .btn-submit {
+        background-color: blue;
+
+        color: white;
+
+        padding: 10px;
+
+        width: 100px;
+
+        border-radius: 5px;
+
+        text-align: center;
+      }
+
+      .dialog-footer {
+        padding: 20px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: end;
+      }
+    </style>
+    <script>
+      function CloseDialog(){
+        document.querySelector("dialog").open=false;
+      }
+      function ToggleDialog(){
+        const dialog = document.querySelector("dialog");
+        dialog.open = !dialog.open;
+      }
+      </script>
+
+  </head>
+
+  <body>
+    <dialog>
+      <div class="dialog-header">
+        <span>Talk to Advisor Form</span>
+
+        <span onclick="CloseDialog()" class="bi bi-x-lg"></span>
+      </div>
+
+      <div class="dialog-body">
+        <div class="control">Full Name</div>
+
+        <div class="control">Mobile Number</div>
+
+        <div class="control">Email Address</div>
+
+        <div class="control">
+          <span>Select Course</span> <span class="bi bi-chevron-down"></span>
+        </div>
+      </div>
+
+      <div class="dialog-footer">
+        <div onclick="CloseDialog()" class="btn-submit">Submit</div>
+      </div>
+    </dialog>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum vel
+      ipsum facere nemo sit odio, tenetur consequatur illum, eum reiciendis
+      magnam voluptas unde illo esse ratione officiis tempore officia
+      perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fuga id amet a iusto dolor quisquam similique laborum nobis facilis
+      necessitatibus rerum labore omnis sint, architecto tempore? Voluptatem
+      explicabo aliquam qui.
+    </p>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum vel
+      ipsum facere nemo sit odio, tenetur consequatur illum, eum reiciendis
+      magnam voluptas unde illo esse ratione officiis tempore officia
+      perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fuga id amet a iusto dolor quisquam similique laborum nobis facilis
+      necessitatibus rerum labore omnis sint, architecto tempore? Voluptatem
+      explicabo aliquam qui.
+    </p>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum vel
+      ipsum facere nemo sit odio, tenetur consequatur illum, eum reiciendis
+      magnam voluptas unde illo esse ratione officiis tempore officia
+      perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fuga id amet a iusto dolor quisquam similique laborum nobis facilis
+      necessitatibus rerum labore omnis sint, architecto tempore? Voluptatem
+      explicabo aliquam qui.
+    </p>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum vel
+      ipsum facere nemo sit odio, tenetur consequatur illum, eum reiciendis
+      magnam voluptas unde illo esse ratione officiis tempore officia
+      perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fuga id amet a iusto dolor quisquam similique laborum nobis facilis
+      necessitatibus rerum labore omnis sint, architecto tempore? Voluptatem
+      explicabo aliquam qui.
+    </p>
+
+    <button
+      onclick="ToggleDialog()"
+      class="bi bi-messenger"
+      style="
+        position: fixed;
+        font-size: 30px;
+        padding: 10px;
+        border: none;
+        right: 10px;
+        bottom: 50px;
+      "
+    ></button>
+  </body>
+</html>

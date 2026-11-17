@@ -1,0 +1,21 @@
+{
+  "title": "Apple iPhone 17 (Sage, 512 GB)",
+
+  "img": "../public/A.jpg",
+
+  "price": 124999,
+
+  "rating": { "rate": 4.7, "ratings": 40132, "reviews": 1019 },
+
+  "features": [
+    "512 GB ROM",
+
+    "16.0 cm (6.3 inch) Super Retina XDR Display",
+
+    "48MP + 48MP | 18MP Front Camera",
+
+    "A19 Chip, 6 Core Processor Processor",
+
+    "Apple One (1) Year Limited Warranty"
+  ]
+}

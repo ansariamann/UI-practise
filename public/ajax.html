@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script src="../node_modules/bootstrap/js/dist/util/"></script>
+
+    <script>
+      function bodyload() {
+        var now = new Date();
+
+        document.querySelector(
+          "div"
+        ).innerHTML = `Page loaded at ${now.toLocaleTimeString()}`;
+      }
+
+      function fnload(){
+        let http = new XMLHttpRequest();
+        http.open("GET", "../data/log.txt" , true);
+        http.send();
+        http.onreadystatechange=function(){
+          if(http.readyState===4){
+            document.querySelector("pre").innerText= http.responseText;
+          }
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+
+  <body onload="bodyload()">
+    <p>This iss a para</p>
+    <div></div>
+    <button class="m-3 p-4  " onclick="fnload()">Load</button>
+<pre></pre>
+  </body>
+</html>

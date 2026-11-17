@@ -1,0 +1,4 @@
+Nov 13, 2026 4:57:50 PM in.spring.logging.ClassC main
+SEVERE: new log. sever
+Nov 13, 2026 4:57:50 PM in.spring.logging.ClassC main
+WARNING: warninnnnnnnnnnnnnng
